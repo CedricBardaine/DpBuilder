@@ -6,9 +6,13 @@ import java.util.List;
 public class Meal {
 	List<Item> menu ;
 	
+	public Meal() {
+		this.menu = new ArrayList<Item>() ;
+	}
+	
 	public void addItem(Item item) {
 		if ( this.menu == null) 
-			this.menu = new ArrayList<Item>() ; 
+			this.menu = new ArrayList<Item>();
 		this.menu.add(item) ; 
 	}
 	
@@ -29,7 +33,7 @@ public class Meal {
 			System.out.print( it.name() ); 
 			System.out.print(" : ");
 			System.out.print( it.price() +"€ \r");
-			System.out.print("It is wrapped in : " + it.packing().getType() + "\r");
+			System.out.print("It is packed in : " + it.packing().getType() + "\r");
 			System.out.print(" \r");
 		}
 		System.out.println("____________________");
