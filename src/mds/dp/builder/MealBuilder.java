@@ -6,24 +6,36 @@ package mds.dp.builder;
  *
  */
 public class MealBuilder {
+	Meal theMeal ; 
 
 	public MealBuilder prepreVegMeal() {
-		return null;
+		VegBurger aMiam = new VegBurger() ; 
+		Pepsi aGlou = new Pepsi() ; 
 		
+		this.theMeal.addItem(aMiam); 
+		this.theMeal.addItem(aGlou);
+		return this ; 
 	}
 	
 	public MealBuilder prepareNonVegMeal() {
-		return null;
+		ChickenBurger aMiam = new ChickenBurger() ; 
+		Coke aGlou = new Coke() ; 
 		
+		this.theMeal.addItem(aMiam); 
+		this.theMeal.addItem(aGlou);
+		return this ;
 	}
 	
 	public MealBuilder addItem(Item item) {
-		return null; 
-		
+		this.theMeal.addItem(item);
+		return this ; 
 	}
 	
 	public Meal build() {
-		return null;
-		
+		if ( (int) Math.random() * (1 - 0) == 1 )
+			prepreVegMeal() ;
+		else
+			prepareNonVegMeal() ; 
+		return this.theMeal ; 		
 	}
 }

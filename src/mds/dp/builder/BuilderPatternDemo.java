@@ -14,5 +14,8 @@ public class BuilderPatternDemo {
 	public static void main(String[] args) {
 		 final MealBuilder theMealBuilder = new MealBuilder() ; 
 		 
+		 for (int i = 0; i < args.length; i++) {
+			theMealBuilder.build().showItems();
+		}
 	}
 }
