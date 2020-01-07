@@ -29,7 +29,7 @@ public class BuilderPatternDemo {
 		 
 		 System.out.println();
 		 System.out.println("############################################################");
-		 System.out.println("Second test : 3 vegi menus then 2 non vegi menus.");
+		 System.out.println("Second test : 3 veggie menus then 2 non veggie menus.");
 		 
 		 Meal meal1 ; 
 		 Meal meal2 ; 
@@ -60,7 +60,7 @@ public class BuilderPatternDemo {
 		 
 		 System.out.println();
 		 System.out.println("############################################################");
-		 System.out.println("Third test : 2 vegi & 1 non vegi in one menu.");
+		 System.out.println("Third test : 2 veggie & 1 non veggie in one menu.");
 		
 		 Meal meal6 ; 
 		 
@@ -70,7 +70,7 @@ public class BuilderPatternDemo {
 		 meal6 = theMealBuilder.build() ; 
 		 meal6.showItems(); 
 		 
-		 System.out.println("The total price is about "+ meal6.getCost() +"€") ;
+		 System.out.println("The total price is about "+ meal6.getCost() +"ï¿½") ;
 		 
 		 System.out.println();
 		 System.out.println("############################################################");
@@ -86,7 +86,7 @@ public class BuilderPatternDemo {
 		 System.out.println();
 		 System.out.println("############################################################");
 		 System.out.println("END of tests.");
-		 System.out.println("Note that if you see '?' character in console, it may be a '€' or a '°' character.");
+		 System.out.println("Note that if you see '?' character in console, it may be a '°' or a '€' character.");
 		 
 		 
 		 
@@ -101,11 +101,11 @@ public class BuilderPatternDemo {
 		 
 		 System.out.println();
 		 System.out.println("############################################################");
-		 System.out.println("First test : a vegi menu with a Game.");
+		 System.out.println("First test : a veggie menu with a Game.");
 		 
 		 System.out.println("Initialising a Meal...");
 		 Meal meal8 ; 
-		 System.out.println("Preparing a vegi buger... ");
+		 System.out.println("Preparing a veggie buger... ");
 		 theMealBuilder.prepreVegMeal() ; 
 		 System.out.println("Adding a random game to the Meal...");
 		 theMealBuilder.addGameToAMeal(0) ; 
@@ -116,7 +116,7 @@ public class BuilderPatternDemo {
 		 
 		 System.out.println();
 		 System.out.println("############################################################");
-		 System.out.println("Second test : a vegi menu with 4 CarGame. With a little luck, you might have 'The rarest car' !");
+		 System.out.println("Second test : a veggie menu with 4 CarGame. With a little luck, you might have 'The rarest car' !");
 		 
 		 theMealBuilder.prepreVegMeal() ; 
 		 for (int i = 0; i < 4; i++) { theMealBuilder.addGameToAMeal(1) ; }
