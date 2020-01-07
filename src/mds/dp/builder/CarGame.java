@@ -14,16 +14,19 @@ public class CarGame extends Game {
 			this.price = (float) 0;
 			this.theBag = new Bag();
 			break;
+			
 		case 1:
 			this.name = "The green car";
 			this.price = (float) 0;
 			this.theBag = new Bag();
 			break;
+			
 		case 2:
 			this.name = "The yellow car";
 			this.price = (float) 0;
 			this.theBag = new Bag();
 			break;
+			
 		case 3:
 			this.name = "The rarest car";
 			this.price = (float) 0;

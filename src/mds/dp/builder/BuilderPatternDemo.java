@@ -15,6 +15,11 @@ public class BuilderPatternDemo {
 		 final MealBuilder theMealBuilder = new MealBuilder() ; 
 		 
 		 System.out.println();
+		 System.out.println("#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-");
+		 System.out.println("EX1 TESTS : ");
+		 System.out.println();
+		 
+		 System.out.println();
 		 System.out.println("############################################################");
 		 System.out.println("First test : 5 random menus.");
 		 		 
@@ -82,5 +87,42 @@ public class BuilderPatternDemo {
 		 System.out.println("############################################################");
 		 System.out.println("END of tests.");
 		 System.out.println("Note that if you see '?' character in console, it may be a '€' or a '°' character.");
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 System.out.println();
+		 System.out.println("#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-");
+		 System.out.println("EX2 TESTS : ");
+		 System.out.println();
+		 
+		 System.out.println();
+		 System.out.println("############################################################");
+		 System.out.println("First test : a vegi menu with a Game.");
+		 
+		 System.out.println("Initialising a Meal...");
+		 Meal meal8 ; 
+		 System.out.println("Preparing a vegi buger... ");
+		 theMealBuilder.prepreVegMeal() ; 
+		 System.out.println("Adding a random game to the Meal...");
+		 theMealBuilder.addGameToAMeal(0) ; 
+		 System.out.println("Building the Meal...");
+		 meal8 = theMealBuilder.build();
+		 System.out.println("Showing the Meal :");
+		 meal8.showItems();
+		 
+		 System.out.println();
+		 System.out.println("############################################################");
+		 System.out.println("Second test : a vegi menu with 4 CarGame. With a little luck, you might have 'The rarest car' !");
+		 
+		 theMealBuilder.prepreVegMeal() ; 
+		 for (int i = 0; i < 4; i++) { theMealBuilder.addGameToAMeal(1) ; }
+		 meal8 = theMealBuilder.build();
+		 meal8.showItems();
+		 
+
 	}
 }
