@@ -32,7 +32,8 @@ public class MealBuilder {
 	}
 	
 	public Meal build() {
-		if ( (int) Math.random() * (1 - 0) == 1 )
+		this.theMeal = new Meal() ; 
+		if ( (int)Math.round( Math.random() * (1) )   == 1 )
 			prepreVegMeal() ;
 		else
 			prepareNonVegMeal() ; 

@@ -1,11 +1,14 @@
 package mds.dp.builder;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Meal {
 	List<Item> menu ;
 	
 	public void addItem(Item item) {
+		if ( this.menu == null) 
+			this.menu = new ArrayList<Item>() ; 
 		this.menu.add(item) ; 
 	}
 	
@@ -18,16 +21,18 @@ public class Meal {
 	}
 	
 	public void showItems() {
-		int i = 0 ;
+		int i = 1 ;
+		System.out.println("____________________");
 		System.out.println("This menu contains :");
 		for (Item it : menu) {
-			System.out.println("Item n°"+(i++)+" - - - ");
+			System.out.print("Item n°"+(i++)+" - - - \r");
 			System.out.print( it.name() ); 
-			System.out.print(" - ");
-			System.out.println( it.price() +"\r");
-			System.out.print("It is wrapped in : " + it.packing().getType() );
-			System.out.println("- - - - - -");
+			System.out.print(" : ");
+			System.out.print( it.price() +"€ \r");
+			System.out.print("It is wrapped in : " + it.packing().getType() + "\r");
+			System.out.print(" \r");
 		}
+		System.out.println("____________________");
 	}
 	
 	

@@ -14,8 +14,14 @@ public class BuilderPatternDemo {
 	public static void main(String[] args) {
 		 final MealBuilder theMealBuilder = new MealBuilder() ; 
 		 
-		 for (int i = 0; i < args.length; i++) {
+		 System.out.println("############################################################");
+		 System.out.println("First test : 5 random menus.");
+		 		 
+		 for (int i = 0; i < 5; i++) {
 			theMealBuilder.build().showItems();
 		}
+		 
+		 System.out.println("############################################################");
+		 System.out.println("Second test : 3 vegi menus then 2 non vegi menus.");
 	}
 }
