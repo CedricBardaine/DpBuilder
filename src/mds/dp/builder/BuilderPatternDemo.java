@@ -11,12 +11,6 @@ public class BuilderPatternDemo {
 	 * Uses the MealBuilder to init several menus and display their composition in the console. 
 	 * @param args
 	 */
-	/**
-	 * @param args
-	 */
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		 final MealBuilder theMealBuilder = new MealBuilder() ; 
 		 
