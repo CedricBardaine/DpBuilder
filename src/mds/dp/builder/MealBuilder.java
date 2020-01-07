@@ -7,12 +7,22 @@ package mds.dp.builder;
  */
 public class MealBuilder {
 
-	public Meal prepreVegMeal() {
+	public MealBuilder prepreVegMeal() {
 		return null;
 		
 	}
 	
-	public Meal prepareNonVegMeal() {
+	public MealBuilder prepareNonVegMeal() {
+		return null;
+		
+	}
+	
+	public MealBuilder addItem(Item item) {
+		return null; 
+		
+	}
+	
+	public Meal build() {
 		return null;
 		
 	}
