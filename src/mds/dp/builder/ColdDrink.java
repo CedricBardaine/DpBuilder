@@ -1,25 +1,51 @@
 package mds.dp.builder;
 
-public class ColdDrink implements Item{
-
-	Bottle laBottle ; 
+public abstract class ColdDrink implements Item{
+	Bottle theBottle ; 
+	
+	String name ; 
+	float price ; 
 	
 	@Override
 	public String name() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.name ; 
 	}
 
 	@Override
 	public Packing packing() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.theBottle ; 
 	}
 
 	@Override
 	public float price() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.price ; 
 	}
+
+//	/// getters & setters 
+//
+//	public Bottle getTheBottle() {
+//		return theBottle;
+//	}
+//
+//	public void setTheBottle(Bottle theBottle) {
+//		this.theBottle = theBottle;
+//	}
+//
+//	public String getName() {
+//		return name;
+//	}
+//
+//	public void setName(String name) {
+//		this.name = name;
+//	}
+//
+//	public float getPrice() {
+//		return price;
+//	}
+//
+//	public void setPrice(float price) {
+//		this.price = price;
+//	}
+	
 	
 }

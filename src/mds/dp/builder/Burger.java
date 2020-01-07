@@ -1,23 +1,23 @@
 package mds.dp.builder;
 
-public class Burger implements Item {
-	Wrapper leWrapper ;
+public abstract class Burger implements Item {
+	Wrapper theWrapper ;
+	
+	String name ;
+	float price ; 
 
 	@Override
 	public String name() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.name ; 
 	}
 
 	@Override
 	public Packing packing() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.theWrapper ; 
 	}
 
 	@Override
 	public float price() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.price ;
 	} 
 }
